@@ -1,0 +1,173 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+header{
+    height: 880px;
+    justify-content: space-between;
+    background-position: bottom;
+    background: #7F9DDC ;
+    background-size: cover;
+
+}
+img{
+    z-index: 10;
+}
+/* header.home {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 616px;
+    height: 100%;
+} */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+.call-to-action {
+    padding: 11px 21px;
+    background-color: var(--main-pink);
+    border-radius: 4px;
+    color: white;
+    transition: 0.5s;
+    height: fit-content;
+    width: fit-content;
+}
+
+.call-to-action.grey {
+    background-color: var(--main-grey);
+}
+
+.call-to-action:hover {
+    filter: brightness(0.85);
+}
+
+nav img {
+    padding: 20px 35px;
+}
+
+nav #links {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 35px;
+
+}
+
+#links #top {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#top a:first-of-type {
+    margin-right: 26px;
+}
+
+ #bottom {
+    margin-top: 23px;
+}
+
+
+
+header #bottom a {
+    color: black;
+}
+
+header.home #bottom a {
+    color: white;
+}
+
+#bottom a:not(:last-of-type) {
+    margin-right: 58px;
+}
+
+main{
+    background: lightgray;
+    height: 1200px;
+    padding-top: 40px;
+}
+.nous{
+    height: 30%;
+    display: flex;
+    
+}
+.technician{
+    width: 40%;
+    display:flex;
+    text-align: center;
+}
+.imge{
+    height: 75%;
+    margin: 50px;
+}
+.story{
+    width: 60%;
+    height: auto;
+}
+.story h3{
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+.recherche{
+    width: 1298px;
+    height: 576px;
+    flex-shrink: 0;
+}
+.newsletter{
+    width: 60%;
+    background: blue;
+    height: auto;
+}
+footer{
+    background: black;
+    height: 400px;
+    padding: 60px 100px;
+}
+h3{
+    color: white;
+}
+footer .optimal-width {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    color: white;
+}
+
+footer .optimal-width div {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+footer div * {
+    margin-bottom: 10px;
+}
+
+footer svg {
+    fill: white;
+    height: 40px;
+    width: 40px
+}
