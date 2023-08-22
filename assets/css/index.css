@@ -22,14 +22,38 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+    text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 header{
     height: 880px;
     justify-content: space-between;
     background-position: bottom;
-    background: #7F9DDC ;
+    background: url('../images/Rectangle_41.jpg');
     background-size: cover;
-
+    background-position: center;
 }
 img{
     z-index: 10;
@@ -43,12 +67,14 @@ img{
 } */
 
 nav {
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
+    flex-wrap: wrap;
+   
 }
 .call-to-action {
     padding: 11px 21px;
-    background-color: var(--main-pink);
+    background-color: grey;
     border-radius: 4px;
     color: white;
     transition: 0.5s;
@@ -64,21 +90,26 @@ nav {
     filter: brightness(0.85);
 }
 
-nav img {
-    padding: 20px 35px;
+#logo {
+    padding-left: 50px;
 }
 
 nav #links {
     display: flex;
     flex-direction: column;
     padding: 20px 35px;
-
+    
 }
 
-#links #top {
+
+/* #links #top {
     display: flex;
     justify-content: flex-end;
 }
+#links #bottom{
+    display: flex;
+    justify-content: flex-end;
+} */
 
 #top a:first-of-type {
     margin-right: 26px;
@@ -86,12 +117,15 @@ nav #links {
 
  #bottom {
     margin-top: 23px;
+    
+    
 }
 
 
 
 header #bottom a {
     color: black;
+    
 }
 
 header.home #bottom a {
@@ -110,11 +144,32 @@ main{
 .nous{
     height: 30%;
     display: flex;
+    margin: 20px;
     
+}
+h1{
+    color: #637FBB;
+    text-align: center;
+    font-family: Playfair Display;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: capitalize;
+}
+p{
+    color: #000;
+    font-family: Lato;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 50px;
 }
 .technician{
     width: 40%;
     display:flex;
+    margin: 30px;
     text-align: center;
 }
 .imge{
@@ -129,10 +184,17 @@ main{
     margin-top: 20px;
     margin-bottom: 60px;
 }
+h1, .title{
+    margin: 58px;
+}
 .recherche{
     width: 1298px;
     height: 576px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     flex-shrink: 0;
+    margin-left: 5%;
 }
 .newsletter{
     width: 60%;
