@@ -283,7 +283,7 @@ view{
     filter: brightness (75%);
     background: grey;
 }
-.call-to-action.grey {
+.call-to-action.plus {
    
     justify-content: center;
     background-color: #BB0000;
