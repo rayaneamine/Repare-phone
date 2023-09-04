@@ -48,19 +48,21 @@ table {
 	border-spacing: 0;
 }
 header{
-    height: 880px;
+    height: 200px;
     justify-content: space-between;
+    background: #7F9DDC;
     background-position: bottom;
-    background: url('../images/Rectangle_41.jpg');
     background-size: cover;
     background-position: center;
 }
 
-img{
+/* img{
     z-index: 10;
-}
-.bg{
+} */
+header .bg{
     height: 435px;
+    width: 2000px;
+    background: url("../images/Rectangle_41.png");
 }
 /* header.home {
     background-repeat: no-repeat;
